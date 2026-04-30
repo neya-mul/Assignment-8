@@ -17,7 +17,7 @@ export default function BookCard({ book }) {
                 <h2 className="card-title">{book.title}</h2>
                 <p>{book.description}</p>
                 <div className="card-actions justify-end">
-                   <Link href='/details'> <button className="btn btn-primary">View Details</button></Link>
+                   <Link href={`/details/${book.id}`}> <button className="btn btn-primary">View Details</button></Link>
                 </div>
             </div>
         </div>
