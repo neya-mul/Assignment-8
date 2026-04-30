@@ -1,10 +1,33 @@
+import { getBooks } from '@/lib/books';
+import Image from 'next/image';
 import React from 'react'
 
-export default async function Details({params}) {
-  const id = await params
-  console.log(id);
-  
+export default async function Details({ params }) {
+  const book = await getBooks()
+  const { id } = await params
+  const detail = book.find(b => b.id == id)
+  console.log(detail);
+
+
   return (
-    <div>Details</div>
+    <div className="hero bg-base-300 min-h-screen">
+      <div className="hero-content bg-gray-900 flex-col lg:flex-row gap-10 container mx-auto border w-fit p-20 rounded-2xl ">
+        <Image
+          width={200}
+          height={400}
+          alt={detail.title}
+          src={detail.image_url}
+          className="max-w-sm rounded-lg shadow-2xl"
+        />
+        <div>
+          <h1 className="text-5xl font-bold">{detail.title}</h1>
+          <p className="py-2 text-xl">{detail.description}</p>
+          <p className='text-xl'>Writter name : {detail.author}</p>
+          <p> Category : {detail.category}</p>
+          <p>Available Quantity : {detail.available_quantity}</p>
+          <button className="btn bg-gray-500 my-3">Borrow this Book</button>
+        </div>
+      </div>
+    </div>
   )
 }
