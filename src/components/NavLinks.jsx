@@ -7,6 +7,6 @@ export default function NavLinks({href, children}) {
     const path = usePathname()
     const isActive = href === path
   return (
-   <Link href={href} className={`${isActive? 'bg-green-500' : ''} btn rounded-2xl`}>{children}</Link>
+   <Link href={href} className={`${isActive? 'bg-gray-500' : ''} btn rounded-2xl`}>{children}</Link>
   )
 }

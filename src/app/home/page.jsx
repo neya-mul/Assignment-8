@@ -3,9 +3,16 @@ import React from 'react'
 import banner from '../../../public/images/banner.png'
 import Link from 'next/link'
 import News from '@/components/News'
+import { getBooks } from '@/lib/books'
 
-export default function Home() {
+export default async function Home() {
+
+// const books = await getBooks()
+// console.log(books);
+
+
   return (
+
 
     <div>
       <News></News>
@@ -23,11 +30,14 @@ export default function Home() {
             <p className="mb-5 text-md">
               Welcome to BookNest—your home for exploring stories, sharing knowledge, and borrowing books with ease.
             </p>
-            <Link href='all-books'> <button className="btn bg-green-500 rounded-2xl">Browse Now</button></Link>
+            <Link href='all-books'> <button className="btn bg-gray-500 rounded-2xl">Browse Now</button></Link>
           </div>
         </div>
       </div>
+      {/* featured books */}
+      <div>
 
+      </div>
 
     </div>
 
