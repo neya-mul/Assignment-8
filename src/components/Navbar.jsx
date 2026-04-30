@@ -33,7 +33,7 @@ export default function Navbar() {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+               <Link href='/login'><button className='btn bg-gray-500 rounded-2xl'>Login</button></Link>
             </div>
         </div>
     )
