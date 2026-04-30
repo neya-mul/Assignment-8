@@ -3,6 +3,8 @@ import Link from 'next/link'
 import React from 'react'
 import logo from '../../public/images/logo.png'
 import NavLinks from './NavLinks'
+import { CgProfile } from 'react-icons/cg'
+import { FaRegUser } from 'react-icons/fa'
 
 export default function Navbar() {
     return (
@@ -32,8 +34,11 @@ export default function Navbar() {
 
                 </ul>
             </div>
-            <div className="navbar-end">
-               <Link href='/login'><button className='btn bg-gray-500 rounded-2xl'>Login</button></Link>
+            <div className="navbar-end flex gap-3">
+                <FaRegUser />
+
+
+                <Link href='/login'><button className='btn bg-gray-500 rounded-2xl'>Login</button></Link>
             </div>
         </div>
     )

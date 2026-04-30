@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Register() {
@@ -20,7 +21,7 @@ export default function Register() {
                 <label className="label">Password</label>
                 <input type="password" className="input w-full" placeholder="Password" />
 
-                <button className="btn btn-neutral mt-4">Register</button>
+                <Link href='/login'>  <button className="btn btn-neutral mt-4 w-full">Register</button></Link>
 
             </fieldset>
         </div>
