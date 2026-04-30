@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function BookCard({ book }) {
     return (
-        <div className="card bg-base-100 w-96 shadow-sm border mx-auto my-10">
+        <div className="card bg-base-100 max-w-96 shadow-sm border mx-auto my-10">
             <figure className='relative rounded-none w-[160] h-56 mx-auto bg-red-800'>
                 <Image
                     src={book.image_url}
