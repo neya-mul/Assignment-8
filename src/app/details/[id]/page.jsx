@@ -11,7 +11,7 @@ export default async function Details({ params }) {
 
   return (
     <div className="hero bg-base-300 min-h-screen">
-      <div className="hero-content bg-gray-900 flex-col lg:flex-row gap-10 container mx-auto border w-fit p-20 rounded-2xl ">
+      <div className="hero-content bg-base-100 flex-col lg:flex-row gap-10 container mx-auto border w-fit p-20 rounded-2xl ">
         <Image
           width={200}
           height={400}
