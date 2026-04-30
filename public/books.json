@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "The Silent Forest",
+    "author": "Ayesha Rahman",
+    "description": "A mysterious tale of a village surrounded by a forest where no one dares to enter after sunset.",
+    "category": "Story",
+    "available_quantity": 5,
+    "image_url": "https://picsum.photos/seed/book1/400/600"
+  },
+  {
+    "id": 2,
+    "title": "Next.js in Action",
+    "author": "John Carter",
+    "description": "A practical guide to building fast and scalable web applications using Next.js.",
+    "category": "Tech",
+    "available_quantity": 8,
+    "image_url": "https://picsum.photos/seed/book2/400/600"
+  },
+  {
+    "id": 3,
+    "title": "The Quantum World",
+    "author": "Dr. Sarah Ahmed",
+    "description": "An introduction to quantum physics explained in a simple and engaging way.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://picsum.photos/seed/book3/400/600"
+  },
+  {
+    "id": 4,
+    "title": "Moonlight Tales",
+    "author": "Rafiq Hasan",
+    "description": "A collection of short stories filled with emotion, mystery, and imagination.",
+    "category": "Story",
+    "available_quantity": 4,
+    "image_url": "https://picsum.photos/seed/book4/400/600"
+  },
+  {
+    "id": 5,
+    "title": "Mastering MongoDB",
+    "author": "Emily Stone",
+    "description": "Comprehensive guide to designing and managing databases using MongoDB.",
+    "category": "Tech",
+    "available_quantity": 7,
+    "image_url": "https://picsum.photos/seed/book5/400/600"
+  },
+  {
+    "id": 6,
+    "title": "The Space Beyond",
+    "author": "Neil Kapoor",
+    "description": "Explore the mysteries of the universe, from black holes to distant galaxies.",
+    "category": "Science",
+    "available_quantity": 3,
+    "image_url": "https://picsum.photos/seed/book6/400/600"
+  },
+  {
+    "id": 7,
+    "title": "Whispers of the Past",
+    "author": "Nusrat Jahan",
+    "description": "A historical fiction story uncovering secrets buried in time.",
+    "category": "Story",
+    "available_quantity": 6,
+    "image_url": "https://picsum.photos/seed/book7/400/600"
+  },
+  {
+    "id": 8,
+    "title": "JavaScript Essentials",
+    "author": "Michael Lee",
+    "description": "A beginner-friendly guide to understanding the fundamentals of JavaScript.",
+    "category": "Tech",
+    "available_quantity": 10,
+    "image_url": "https://picsum.photos/seed/book8/400/600"
+  },
+  {
+    "id": 9,
+    "title": "Biology Unlocked",
+    "author": "Dr. Tanvir Hossain",
+    "description": "A deep dive into the building blocks of life and biological systems.",
+    "category": "Science",
+    "available_quantity": 5,
+    "image_url": "https://picsum.photos/seed/book9/400/600"
+  },
+  {
+    "id": 10,
+    "title": "The Last Journey",
+    "author": "Imran Kabir",
+    "description": "A touching story about life, loss, and the meaning of existence.",
+    "category": "Story",
+    "available_quantity": 2,
+    "image_url": "https://picsum.photos/seed/book10/400/600"
+  },
+  {
+    "id": 11,
+    "title": "Secure Web Apps",
+    "author": "Laura Smith",
+    "description": "Learn how to build secure web applications using modern authentication techniques.",
+    "category": "Tech",
+    "available_quantity": 9,
+    "image_url": "https://picsum.photos/seed/book11/400/600"
+  },
+  {
+    "id": 12,
+    "title": "Chemistry Basics",
+    "author": "Dr. Arif Chowdhury",
+    "description": "An easy-to-understand guide to fundamental chemistry concepts.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://picsum.photos/seed/book12/400/600"
+  }
+]
