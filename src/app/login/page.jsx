@@ -31,9 +31,9 @@ export default function Login() {
         }
     }
     return (
-        <div className='flex justify-center items-center min-h-[70vh]'>
-            <form action="" onSubmit={loginButton}>
-                <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xl border p-10 h-[40vh] ">
+        <div className='flex justify-center items-center min-h-[80vh] px-4'>
+            <form action="" onSubmit={loginButton} className='max-w-xl w-full mx-auto'>
+                <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border md:p-10 p-6  ">
                     <h1 className='text-center text-3xl'>Please Login</h1>
 
                     <label className="label">Email</label>
@@ -49,3 +49,4 @@ export default function Login() {
         </div>
     )
 }
+// <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border p-6 md:p-10 shadow-xl">

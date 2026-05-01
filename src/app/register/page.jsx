@@ -41,10 +41,10 @@ export default function Register() {
 
 
     return (
-        <div className='flex justify-center items-center min-h-[70vh]'>
-            <form action="" onSubmit={registerButton}>
+        <div className='flex justify-center items-center min-h-[80vh] px-4'>
+            <form action="" onSubmit={registerButton} className='max-w-xl w-full mx-auto'>
 
-                <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xl border p-10 ">
+                <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border md:p-10 p-6  ">
                     <h1 className='text-center text-3xl'>Please Register</h1>
 
                     <label className="label">Name</label>
