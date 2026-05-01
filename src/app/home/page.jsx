@@ -6,6 +6,7 @@ import { getBooks } from '@/lib/books'
 import Banner from '@/components/Banner'
 import FeaturedBooks from '@/components/FeaturedBooks'
 import Feature from '@/components/Feature'
+import Rating from '@/components/Rating'
 
 export default function Home() {
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Banner></Banner>
       {/* featured books */}
       <FeaturedBooks></FeaturedBooks>
+      <Rating></Rating>
       <Feature></Feature>
 
     </div>
