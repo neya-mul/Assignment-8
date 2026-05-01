@@ -25,7 +25,7 @@ export default function Register() {
             alert(error.message)
         }
         else{
-            alert("Registered Successfully...")
+            alert("Registered Successfully")
         }
     }
 
