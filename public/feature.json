@@ -1,0 +1,34 @@
+{
+  "sectionTitle": "Why Join the Nest?",
+  "sectionSubtitle": "Discover the perks of community-driven reading.",
+  "features": [
+    {
+      "id": 1,
+      "title": "Eco-Friendly Reading",
+      "description": "Reduce paper waste by sharing books within your community instead of buying new copies.",
+      "icon": "leaf-outline",
+      "color": "#4CAF50"
+    },
+    {
+      "id": 2,
+      "title": "Zero Cost",
+      "description": "Access thousands of titles without the price tag of a bookstore. Reading shouldn't be a luxury.",
+      "icon": "wallet-outline",
+      "color": "#FFD700"
+    },
+    {
+      "id": 3,
+      "title": "Connect with Neighbors",
+      "description": "Meet fellow bookworms in your area through our local 'Nest' pickup points.",
+      "icon": "people-outline",
+      "color": "#2196F3"
+    },
+    {
+      "id": 4,
+      "title": "Smart Reminders",
+      "description": "Never worry about late fees with our automated SMS and email return notifications.",
+      "icon": "notifications-outline",
+      "color": "#FF5722"
+    }
+  ]
+}
