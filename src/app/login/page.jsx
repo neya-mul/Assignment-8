@@ -19,9 +19,10 @@ export default function Login() {
             email: email, // required
             password: password, // required
             // image: image,
+            rememberMe: true,
             callbackURL: "/home",
         });
-        console.log(data, error)
+        // console.log(data, error)
         if (error) {
             alert(error.message)
         }
@@ -41,7 +42,7 @@ export default function Login() {
                     <label className="label">Password</label>
                     <input type="password" className="input w-full" placeholder="Password" name='password'/>
 
-                    <button className="btn btn-neutral mt-4">Login</button>
+                    <button className="btn btn-neutral mt-4" type='submit'>Login</button>
                     <p className='text-sm mt-3'>Don't have any account? <span className='text-blue-300'><Link href='/register'>Register</Link></span></p>
                 </fieldset>
             </form>
