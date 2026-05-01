@@ -1,9 +1,15 @@
 'use client'
 import { authClient } from '@/lib/auth-client'
-import Link from 'next/link'
+// import { router } from 'better-auth/api'
+// import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+// import { Router } from 'next/router'
 import React from 'react'
 
+
+
 export default function Register() {
+    const router = useRouter()
 
     const registerButton = async (e) => {
         e.preventDefault()
@@ -12,6 +18,7 @@ export default function Register() {
         const password = e.target.password.value
         const email = e.target.email.value
         // console.log(name, image, password, email);
+        
 
         const { data, error } = await authClient.signUp.email({
             name: name, // required
@@ -26,6 +33,7 @@ export default function Register() {
         }
         else{
             alert("Registered Successfully")
+            router.push('/login')
         }
     }
 

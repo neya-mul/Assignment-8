@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -5,8 +6,28 @@ import logo from '../../public/images/logo.png'
 import NavLinks from './NavLinks'
 import { CgProfile } from 'react-icons/cg'
 import { FaRegUser } from 'react-icons/fa'
+import { authClient } from '@/lib/auth-client'
+// import { router } from 'better-auth/api'
+import { useRouter } from 'next/navigation'
 
 export default function Navbar() {
+    const { data: session } = authClient.useSession()
+    // console.log(session);
+    const user = session?.user
+    console.log(user)
+    const router = useRouter()
+
+    const logOutButton = async () => {
+
+        await authClient.signOut({
+              fetchOptions: {
+                onSuccess: () => {
+                  router.push("/login"); // redirect to login page
+                },
+              },
+        });
+    }
+
     return (
         <div className="navbar bg-base-200 fixed py-6 z-10">
             <div className="navbar-start">
@@ -35,11 +56,13 @@ export default function Navbar() {
                 </ul>
             </div>
             <div className="navbar-end flex gap-3">
-                <FaRegUser />
 
+                {user ? <Image src={user.image} width={40} height={40} alt={user.name} className='rounded-full' /> : <FaRegUser />}
 
-                <Link href='/login'><button className='btn bg-gray-500 rounded-2xl'>Login</button></Link>
+                {user ? <button onClick={logOutButton} className='btn bg-gray-500 rounded-2xl'>Log out</button> : <Link href='/login'><button className='btn bg-gray-500 rounded-2xl'>Login</button></Link>}
             </div>
         </div>
     )
 }
+// xyz@gmail.com
+// xyz@1234
