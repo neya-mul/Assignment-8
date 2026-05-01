@@ -1,9 +1,10 @@
-import { getBooks } from '@/lib/books';
+import { getBooks, getFeatures } from '@/lib/books';
 import React from 'react'
 import BookCard from './BookCard';
 
 export default async function FeaturedBooks() {
       const books = await getBooks()
+
 
 
   return (

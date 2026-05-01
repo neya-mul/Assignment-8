@@ -9,8 +9,9 @@ import { FaRegUser } from 'react-icons/fa'
 import { authClient } from '@/lib/auth-client'
 // import { router } from 'better-auth/api'
 import { useRouter } from 'next/navigation'
+import { getFeatures } from '@/lib/books'
 
-export default function Navbar() {
+export default  function Navbar() {
     const { data: session } = authClient.useSession()
     // console.log(session);
     const user = session?.user
@@ -27,6 +28,8 @@ export default function Navbar() {
             },
         });
     }
+
+
 
     return (
         <div className="navbar bg-base-200 fixed py-6 z-10">
