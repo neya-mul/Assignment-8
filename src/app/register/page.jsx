@@ -32,6 +32,7 @@ export default function Register() {
             alert(error.message)
         }
         else{
+            await authClient.signOut()
             alert("Registered Successfully")
             router.push('/login')
         }
