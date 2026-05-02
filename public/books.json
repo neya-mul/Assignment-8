@@ -106,5 +106,95 @@
     "category": "Science",
     "available_quantity": 4,
     "image_url": "https://picsum.photos/seed/book12/400/600"
+  },
+  {
+    "id": 13,
+    "title": "Echoes in the Dark",
+    "author": "Farhan Ahmed",
+    "description": "A suspenseful thriller about voices heard in an abandoned mansion.",
+    "category": "Story",
+    "available_quantity": 5,
+    "image_url": "https://picsum.photos/seed/book13/400/600"
+  },
+  {
+    "id": 14,
+    "title": "React Mastery",
+    "author": "Daniel Brooks",
+    "description": "Advanced techniques and best practices for building applications with React.",
+    "category": "Tech",
+    "available_quantity": 7,
+    "image_url": "https://picsum.photos/seed/book14/400/600"
+  },
+  {
+    "id": 15,
+    "title": "Astrophysics Simplified",
+    "author": "Dr. Meherun Nesa",
+    "description": "Understand the universe with simplified explanations of complex astrophysics topics.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://picsum.photos/seed/book15/400/600"
+  },
+  {
+    "id": 16,
+    "title": "Shadows of Yesterday",
+    "author": "Tanvir Rahman",
+    "description": "A gripping tale of memories, regrets, and hidden truths.",
+    "category": "Story",
+    "available_quantity": 4,
+    "image_url": "https://picsum.photos/seed/book16/400/600"
+  },
+  {
+    "id": 17,
+    "title": "Node.js Deep Dive",
+    "author": "Sophia Turner",
+    "description": "Explore backend development with Node.js, from basics to advanced concepts.",
+    "category": "Tech",
+    "available_quantity": 8,
+    "image_url": "https://picsum.photos/seed/book17/400/600"
+  },
+  {
+    "id": 18,
+    "title": "Genetics Explained",
+    "author": "Dr. Rakib Hasan",
+    "description": "A beginner-friendly guide to genes, DNA, and heredity.",
+    "category": "Science",
+    "available_quantity": 5,
+    "image_url": "https://picsum.photos/seed/book18/400/600"
+  },
+  {
+    "id": 19,
+    "title": "The Hidden Path",
+    "author": "Sadia Islam",
+    "description": "An adventurous journey through unknown lands and inner discovery.",
+    "category": "Story",
+    "available_quantity": 6,
+    "image_url": "https://picsum.photos/seed/book19/400/600"
+  },
+  {
+    "id": 20,
+    "title": "Fullstack Development Guide",
+    "author": "Kevin Martin",
+    "description": "Learn to build complete web applications using modern fullstack tools.",
+    "category": "Tech",
+    "available_quantity": 9,
+    "image_url": "https://picsum.photos/seed/book20/400/600"
+  },
+  {
+    "id": 21,
+    "title": "Earth and Environment",
+    "author": "Dr. Sharmeen Akter",
+    "description": "Insights into environmental science and the Earth's ecosystems.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://picsum.photos/seed/book21/400/600"
+  },
+  {
+    "id": 22,
+    "title": "Broken Dreams",
+    "author": "Imtiaz Karim",
+    "description": "A heartfelt story of ambition, failure, and resilience.",
+    "category": "Story",
+    "available_quantity": 3,
+    "image_url": "https://picsum.photos/seed/book22/400/600"
   }
 ]
