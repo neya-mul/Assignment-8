@@ -1,5 +1,5 @@
 import BookCard from '@/components/BookCard';
-import { getBooks } from '@/lib/books'
+import { getBooks } from '@/lib/data'
 import React from 'react'
 
 export default async function AllBooks() {

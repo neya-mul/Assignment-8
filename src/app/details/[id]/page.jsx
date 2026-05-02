@@ -1,4 +1,4 @@
-import { getBooks } from '@/lib/books';
+import { getBooks } from '@/lib/data';
 import Image from 'next/image';
 import React from 'react'
 

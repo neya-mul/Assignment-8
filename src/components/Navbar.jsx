@@ -9,7 +9,7 @@ import { FaRegUser } from 'react-icons/fa'
 import { authClient } from '@/lib/auth-client'
 // import { router } from 'better-auth/api'
 import { useRouter } from 'next/navigation'
-import { getFeatures } from '@/lib/books'
+import { getFeatures } from '@/lib/data'
 
 export default  function Navbar() {
     const { data: session } = authClient.useSession()

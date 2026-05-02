@@ -1,4 +1,4 @@
-import { getBooks, getFeatures } from '@/lib/books';
+import { getBooks, getFeatures } from '@/lib/data';
 import React from 'react'
 import BookCard from './BookCard';
 
