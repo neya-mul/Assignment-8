@@ -1,10 +1,29 @@
+'use client'
 import BookCard from '@/components/BookCard';
 import { getBooks } from '@/lib/data'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-export default async function AllBooks() {
-  const books = await getBooks()
+export default function AllBooks() {
+  const [books, setBooks] = useState([])
+  // const books = await getBooks()
+  const [name, setName] = useState('')
   // console.log(books);
+
+  useEffect(()=>{
+    const fetchBooks = async () =>{
+      const data = await getBooks()
+      setBooks(data)
+    }
+    fetchBooks()
+  },[])
+
+  const search = (e) => {
+    setName(e.target.value)
+
+  }
+  const filterBooks = books.filter(book=>
+    book.title.toLowerCase().includes(name.toLowerCase())
+  )
 
   return (
     <div className=' mt-30'>
@@ -21,12 +40,12 @@ export default async function AllBooks() {
                   strokeWidth="2.5"
                   fill="none"
                   stroke="currentColor"
-                > 
+                >
                   {/* <rect width="20" height="16" x="2" y="4" rx="2"></rect> */}
                   {/* <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path> */}
                 </g>
               </svg>
-              <input type="email" placeholder="Search by title" required />
+              <input type="text" defaultValue={name} onChange={search} placeholder="Search by title" required />
             </label>
             {/* <div className="validator-hint hidden">Enter valid email address</div> */}
           </div>
@@ -34,15 +53,15 @@ export default async function AllBooks() {
         </div>
       </div>
 
-    
-        {/* booke */}
 
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 p-5'>
-          {
-            books.map(book => <BookCard book={book} key={book.id}></BookCard>)
-          }
-        </div>
-   
+      {/* booke */}
+
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 p-5'>
+        {
+          filterBooks.map(book => <BookCard book={book} key={book.id}></BookCard>)
+        }
+      </div>
+
 
     </div>
   )
