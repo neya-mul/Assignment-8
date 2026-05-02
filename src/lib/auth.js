@@ -9,6 +9,11 @@ const client = new MongoClient(process.env.MONGO_URI);
 const db = client.db();
 
 export const auth = betterAuth({
+    trustedOrigins: [
+        "http://localhost:3000",
+        "https://neyamul-assignment-8.vercel.app",
+    ],
+
     database: mongodbAdapter(db, {
         // Optional: if you don't provide a client, database transactions won't be enabled.
         client
@@ -16,4 +21,10 @@ export const auth = betterAuth({
     emailAndPassword: {
         enabled: true,
     },
+    socialProviders: {
+        google: {
+            clientId: process.env.GOOGLE_CLIENT_ID,
+            clientSecret: process.env.GOOGLE_CLIENT_SECRET
+        }
+    }
 });

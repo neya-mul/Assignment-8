@@ -16,7 +16,7 @@ export default function Home() {
 
 
     <div>
-      {/* <News></News> */}
+      <News></News>
       <Banner></Banner>
       {/* featured books */}
       <FeaturedBooks></FeaturedBooks>

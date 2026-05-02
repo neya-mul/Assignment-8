@@ -7,7 +7,7 @@ export default async function AllBooks() {
   // console.log(books);
 
   return (
-    <div className='my-10'>
+    <div className=' mt-30'>
       <div className='text-center'>
         <h1 className='text-6xl'>All Books</h1>
         <p className='max-w-[800px] mx-auto my-3'>"Every book you read is a life you didn't have to live to learn from. Open one, and you open a door to a thousand worlds, a thousand minds, a thousand versions of who you could become."</p>
@@ -21,7 +21,7 @@ export default async function AllBooks() {
                   strokeWidth="2.5"
                   fill="none"
                   stroke="currentColor"
-                >
+                > 
                   {/* <rect width="20" height="16" x="2" y="4" rx="2"></rect> */}
                   {/* <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path> */}
                 </g>
@@ -35,7 +35,7 @@ export default async function AllBooks() {
       </div>
 
     
-        {/* bookd */}
+        {/* booke */}
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 p-5'>
           {

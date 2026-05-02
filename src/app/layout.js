@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
        
         <Navbar></Navbar>
-         <News></News>
+         {/* <News></News> */}
         {children}
         <Footer></Footer>
       </body>

@@ -2,6 +2,7 @@
 import { authClient } from '@/lib/auth-client'
 import Link from 'next/link'
 import React from 'react'
+import { FaGoogle } from 'react-icons/fa'
 
 export default function Login() {
 
@@ -30,6 +31,13 @@ export default function Login() {
             alert("Login Successfully")
         }
     }
+
+
+    const googleButton = async () => {
+        await authClient.signIn.social({
+            provider: "google",
+        })
+    }
     return (
         <div className='flex justify-center items-center min-h-[80vh] px-4'>
             <form action="" onSubmit={loginButton} className='max-w-xl w-full mx-auto'>
@@ -37,15 +45,21 @@ export default function Login() {
                     <h1 className='text-center text-3xl'>Please Login</h1>
 
                     <label className="label">Email</label>
-                    <input type="email" className="input w-full" placeholder="Email" name='email'/>
+                    <input type="email" className="input w-full" placeholder="Email" name='email' />
 
                     <label className="label">Password</label>
-                    <input type="password" className="input w-full" placeholder="Password" name='password'/>
+                    <input type="password" className="input w-full" placeholder="Password" name='password' />
 
                     <button className="btn btn-neutral mt-4" type='submit'>Login</button>
                     <p className='text-sm mt-3'>Don't have any account? <span className='text-blue-300'><Link href='/register'>Register</Link></span></p>
+
+                    <div className="divider">OR</div>
+                    <button type='button' onClick={googleButton} className='btn btn-neutral w-full border flex items-center'><FaGoogle />
+                        Log in with Google</button>
                 </fieldset>
+
             </form>
+
         </div>
     )
 }
