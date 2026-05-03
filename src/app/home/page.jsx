@@ -18,10 +18,11 @@ export default function Home() {
     <div>
       <News></News>
       <Banner></Banner>
+      <Feature></Feature>
       {/* featured books */}
       <FeaturedBooks></FeaturedBooks>
       <Rating></Rating>
-      <Feature></Feature>
+      
 
     </div>
 

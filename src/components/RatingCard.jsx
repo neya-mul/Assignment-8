@@ -4,7 +4,7 @@ import { IoIosStar } from 'react-icons/io'
 
 export default function RatingCard({ rating }) {
     return (
-        <div className="card max-w-96 w-full bg-base-100 card-xl shadow-sm border p-4 space-y-3">
+        <div className="card rating-card max-w-96 w-full bg-base-100 card-xl shadow-sm border p-10 space-y-3">
             <div>
                 <h1 className='text-3xl'>{rating.book_title}</h1>
                 <p>By <span className='font-bold'>{rating.author}</span></p>

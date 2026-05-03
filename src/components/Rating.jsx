@@ -9,7 +9,7 @@ export default async function Rating() {
 
  const ratings = await review()
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto my-10'>
             <div className='text-center'>
                 <h1 className='text-5xl'>Ratings </h1>
             </div>

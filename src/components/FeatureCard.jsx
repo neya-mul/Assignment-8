@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function FeatureCard({ feature }) {
     return (
-        <div className="card bg-base-100 max-w-96 min-h-[34vh] shadow-sm border mx-auto">
+        <div className="card choose bg-base-100 max-w-96 min-h-[34vh] shadow-sm border mx-auto">
             <figure className="px-10 pt-10">
                 <Image width={100}
                     height={100}

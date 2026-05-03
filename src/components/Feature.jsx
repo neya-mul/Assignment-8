@@ -10,8 +10,8 @@ export default async function Feature() {
 
     return (
         <div>
-            <div className='text-center'>
-                <h1 className='text-5xl'>Why choose us ? </h1>
+            <div className='text-center my-10'>
+                <h1 className='text-5xl'>Why choose BookNest ? </h1>
             </div>
           
                 <MySwiper featureBooks={featureBooks} />
