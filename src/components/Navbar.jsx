@@ -62,7 +62,7 @@ export default  function Navbar() {
 
                 {user ? <Image src={user.image} width={40} height={40} alt={user.name} className='rounded-full' /> : <FaRegUser />}
                 {user && <span className='hidden sm:block' >Hello : {user.name}</span>}
-                {user ? <button onClick={logOutButton} className='btn bg-gray-500 rounded-2xl'>Log out</button> : <Link href='/login'><button className='btn bg-gray-500 rounded-2xl'>Login</button></Link>}
+                {user ? <button onClick={logOutButton} className='button btn bg-gray-500 rounded-2xl'>Log out</button> : <Link href='/login'><button className='btn button bg-gray-500 rounded-2xl'>Login</button></Link>}
             </div>
         </div>
     )

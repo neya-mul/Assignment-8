@@ -37,7 +37,7 @@ export default function DetailsCom({detail}) {
                     <p className='text-xl'>Writter name : {detail.author}</p>
                     <p> Category : {detail.category}</p>
                     <p>Available Quantity : {detail.available_quantity}</p>
-                    <button onClick={handleBorrow} className="btn borrow-btn bg-gray-500 my-3">Borrow this Book</button>
+                    <button onClick={handleBorrow} className="btn button bg-gray-500 my-3">Borrow this Book</button>
                 </div>
             </div>
         </div>

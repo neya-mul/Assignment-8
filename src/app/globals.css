@@ -8,17 +8,34 @@
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
 
-.book-card {
+.button {
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
   background: #1C1B1F;
-  transition: transform 0.5s ease, box-shadow 1s ease;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /*  */
+  border-color: rgba(184, 142, 72, 0.4);
+}
+.button:hover{
+   transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  /* */
+  border: 1px solid rgba(233, 193, 81, 0.514);
+
+}
+
+.book-card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #1C1B1F;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /*  */
+  border-color: rgba(184, 142, 72, 0.4);
 }
 
 .book-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-  border-color: rgba(184, 142, 72, 0.4);
-  
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  /* */
+  border: 1px solid rgba(233, 193, 81, 0.514);
 
 }
 
@@ -27,45 +44,49 @@
 }
 
 .book-image {
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
 }
-
+/* 
 .book-btn {
   background: transparent;
   border: 1px solid rgba(184, 142, 72, 0.4);
   color: rgba(255, 255, 255, 0.1);
-  transition: background 0.5s ease , color 0.2 ease;
-}
-
+  transition: background 0.5s ease, color 0.2 ease;
+} */
+/* 
 .book-btn:hover {
-   background-color: #B88E48;
-  color:#1C1B1F ;
-}
+  background-color: #B88E48;
+  color: #1C1B1F;
+} */
 
-.detail{
+.detail {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
   background: #1C1B1F;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  transition: box-shadow 0.5s ease, border-color 0.5s ease;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
-.detail:hover{
+
+.detail:hover {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
   border-color: rgba(184, 142, 72, 0.4);
 }
-.detail-image{
-  transition: transform 0.5s ease;
-}
-.detail:hover .detail-image{
-  transform: scale(1.03s);
-}
-.borrow-btn{
-  background: transparent;
- border: 1px solid rgba(184, 142, 72, 0.4);
- color: #B88E48;
- transition: background 0.2s ease , color 0.2s ease;
+
+.detail-image {
+  transition: transform 0.3s ease;
 }
 
-.borrow-btn:hover{
-  background-color: #B88E48;
-  color:#1C1B1F ;
+.detail:hover .detail-image {
+  transform: scale(1.03s);
 }
+
+/* .borrow-btn {
+  background: transparent;
+  border: 1px solid rgba(184, 142, 72, 0.4);
+  color: #B88E48;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.borrow-btn:hover {
+  background-color: #B88E48;
+  color: #1C1B1F;
+} */
