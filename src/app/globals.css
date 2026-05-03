@@ -23,7 +23,9 @@
   border: 1px solid rgba(233, 193, 81, 0.514);
 
 }
-
+.active{
+  transform: translateY(-10px);
+}
 .book-card {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
   background: #1C1B1F;
