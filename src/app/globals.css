@@ -3,10 +3,34 @@
   themes: all;
 }
 
-
-
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
 
 
+.book-card{
+  background: #1C1B1F;
+  transition: transform 0.3s ease , box-shadaw 0.3s ease;
+
+}
+
+
+.book-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+
+}
+
+.book-card:hover .book-image{
+  transform: scale(1.05);
+}
+.book-image{
+  transition: transform 1s ease;
+}
+.book-btn{
+  background-color: rgba(255,255,255,0.1);
+  transition: background 0.2s ease;
+}
+.book-btn:hover {
+  background-color: rgba(255,255,255,0.2);
+}

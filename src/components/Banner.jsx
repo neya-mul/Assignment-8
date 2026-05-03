@@ -18,7 +18,7 @@ export default function Banner() {
             <p className="mb-5 text-md">
               Welcome to BookNest—your home for exploring stories, sharing knowledge, and borrowing books with ease.
             </p>
-            <Link href='all-books'> <button className="btn bg-gray-500 rounded-2xl">Browse Now</button></Link>
+            <Link href='all-books'> <button className="btn rounded-2xl">Browse Now</button></Link>
           </div>
         </div>
       </div>
