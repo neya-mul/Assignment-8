@@ -26,5 +26,19 @@
     "description": "Never worry about late fees with our automated SMS and email return notifications.",
     "icon": "https://img.icons8.com/color/96/appointment-reminders.png",
     "color": "#FF5722"
-  }
+  },
+  {
+  "id": 5,
+  "title": "Personalized Recommendations",
+  "description": "Discover books tailored to your interests with smart suggestions based on your reading history.",
+  "icon": "https://img.icons8.com/color/96/artificial-intelligence.png",
+  "color": "#9C27B0"
+},
+{
+  "id": 6,
+  "title": "Easy Book Tracking",
+  "description": "Keep track of borrowed and shared books with a simple dashboard that shows due dates and reading progress.",
+  "icon": "https://img.icons8.com/color/96/todo-list.png",
+  "color": "#00BCD4"
+}
 ]
