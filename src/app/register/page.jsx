@@ -45,24 +45,24 @@ export default function Register() {
         <div className='flex justify-center items-center min-h-[80vh] px-4'>
             <form action="" onSubmit={registerButton} className='max-w-xl w-full mx-auto'>
 
-                <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border md:p-10 p-6  ">
+                <fieldset className="fieldset bg-[#1C1B1F] shadoww border-[#b88e4866] rounded-box border md:p-10 p-6  ">
                     <h1 className='text-center text-3xl'>Please Register</h1>
 
                     <label className="label">Name</label>
-                    <input type="text" className="input w-full" placeholder="Name" name='name' />
+                    <input type="text" className="input w-full bg-[#1C1B1F] border-[#b88e4866]" placeholder="Name" name='name' />
 
                     <label className="label">Image URL</label>
-                    <input type='url' className="input w-full" placeholder="Image URL" name='image' />
+                    <input type='url' className="input w-full bg-[#1C1B1F] border-[#b88e4866]" placeholder="Image URL" name='image' />
 
 
 
                     <label className="label">Email</label>
-                    <input type="email" className="input w-full" placeholder="Email" name='email' />
+                    <input type="email" className="input w-full bg-[#1C1B1F] border-[#b88e4866]" placeholder="Email" name='email' />
 
                     <label className="label">Password</label>
-                    <input type="password" className="input w-full" placeholder="Password" name='password' />
+                    <input type="password" className="input w-full bg-[#1C1B1F] border-[#b88e4866]" placeholder="Password" name='password' />
 
-                    <button type='submit' className="btn btn-neutral mt-4 w-full">Register</button>
+                    <button type='submit' className="btn btn-neutral button mt-4 w-full">Register</button>
 
                 </fieldset>
             </form>
