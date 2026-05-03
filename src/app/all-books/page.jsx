@@ -61,7 +61,7 @@ export default function AllBooks() {
         <p className='max-w-[800px] mx-auto my-3'>"Every book you read is a life you didn't have to live to learn from. Open one, and you open a door to a thousand worlds, a thousand minds, a thousand versions of who you could become."</p>
         <div className="join">
           <div>
-            <label className="input validator join-item">
+            <label className="input validator join-item bg-[#1C1B1F]">
               <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <g
                   strokeLinejoin="round"
@@ -78,7 +78,7 @@ export default function AllBooks() {
             </label>
             {/* <div className="validator-hint hidden">Enter valid email address</div> */}
           </div>
-          <button className="btn btn-neutral join-item">Search</button>
+          <button className="btn button btn-neutral join-item">Search</button>
         </div>
       </div>
 

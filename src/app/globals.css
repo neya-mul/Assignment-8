@@ -24,7 +24,13 @@
 
 }
 .active{
-  transform: translateY(-10px);
+  /* transform: translateY(-10px); */
+  background: #FFFFFF;
+  color: #1C1B1F;
+  border: 2px solid rgb(34, 31, 13);
+}
+.shadoww{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
 }
 .book-card {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);

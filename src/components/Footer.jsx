@@ -2,7 +2,11 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+        <footer className="footer footer-horizontal footer-center text-base-content rounded p-10"   style={{
+    background: '#1C1B1F',
+    borderTop: '1px solid rgba(184,142,72,0.2)',
+    color: '#9CA3AF'
+  }}>
             <nav className="grid grid-flow-col gap-4">
                 <a className="link link-hover">About us</a>
                 <a className="link link-hover">Contact</a>
