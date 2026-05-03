@@ -23,13 +23,13 @@ export default function DetailsCom({detail}) {
 
         <div className="hero min-h-screen pt-30 px-10 lg:px-0">
             {/* <DetailsCom></DetailsCom> */}
-            <div className="hero-content  flex-col lg:flex-row gap-10 container mx-auto border w-fit p-20 rounded-2xl ">
+            <div className="hero-content  flex-col lg:flex-row gap-10 container mx-auto detail w-fit p-20 rounded-2xl ">
                 <Image
                     width={200}
                     height={400}
                     alt={detail.title}
                     src={detail.image_url}
-                    className="max-w-sm rounded-lg shadow-2xl"
+                     className="detail-image max-w-sm rounded-lg shadow-2xl"
                 />
                 <div>
                     <h1 className="text-5xl font-bold">{detail.title}</h1>
@@ -37,7 +37,7 @@ export default function DetailsCom({detail}) {
                     <p className='text-xl'>Writter name : {detail.author}</p>
                     <p> Category : {detail.category}</p>
                     <p>Available Quantity : {detail.available_quantity}</p>
-                    <button onClick={handleBorrow} className="btn bg-gray-500 my-3">Borrow this Book</button>
+                    <button onClick={handleBorrow} className="btn borrow-btn bg-gray-500 my-3">Borrow this Book</button>
                 </div>
             </div>
         </div>
