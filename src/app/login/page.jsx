@@ -36,6 +36,7 @@ export default function Login() {
     const googleButton = async () => {
         await authClient.signIn.social({
             provider: "google",
+            rememberMe:false,
         })
     }
     return (
