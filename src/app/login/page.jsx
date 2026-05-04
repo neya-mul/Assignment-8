@@ -3,6 +3,7 @@ import { authClient } from '@/lib/auth-client'
 import Link from 'next/link'
 import React from 'react'
 import { FaGoogle } from 'react-icons/fa'
+import { toast } from 'react-toastify'
 
 export default function Login() {
 
@@ -25,10 +26,10 @@ export default function Login() {
         });
         // console.log(data, error)
         if (error) {
-            alert(error.message)
+            toast.error(error.message)
         }
         else {
-            alert("Login Successfully")
+            toast.success("Login Successfull")
         }
     }
 
@@ -38,6 +39,7 @@ export default function Login() {
             provider: "google",
             rememberMe:false,
         })
+        toast.success("Login Successfull")
     }
     return (
         <div className='flex justify-center items-center min-h-[80vh] px-4'>

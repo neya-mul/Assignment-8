@@ -5,6 +5,7 @@ import { authClient } from '@/lib/auth-client'
 import { useRouter } from 'next/navigation'
 // import { Router } from 'next/router'
 import React from 'react'
+import { toast } from 'react-toastify'
 
 
 
@@ -29,11 +30,11 @@ export default function Register() {
         });
         console.log(data, error)
         if(error){
-            alert(error.message)
+            toast.error(error.message)
         }
         else{
             await authClient.signOut()
-            alert("Registered Successfully")
+            toast.success("Registered Successfully")
             router.push('/login')
         }
     }
