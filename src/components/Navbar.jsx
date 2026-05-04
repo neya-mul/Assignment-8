@@ -69,5 +69,3 @@ export default  function Navbar() {
         </div>
     )
 }
-// xyz@gmail.com
-// xyz@1234
