@@ -49,7 +49,7 @@ Some features on this website require you to be logged in — for example, you c
 | `react-toastify` | Toast notifications |
 | `react-icons` | Icons throughout the UI |
 
----
+<!-- ---
 
 ## 🔐 Environment Variables
 
@@ -77,4 +77,4 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Visit [http://localhost:3000](http://localhost:3000)
+Visit [http://localhost:3000](http://localhost:3000) -->
