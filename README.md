@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📚 BookNest
 
-## Getting Started
+**BookNest** is a online book borrowing platform from where you can borrow books online. I have made this website using **BetterAuth**, **Next.js**, and **MongoDB**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🏠 **Home Page** — Hero banner with "Find Your Next Read", scrolling marquee of new arrivals, and featured books section
+- 🔍 **Book Search** — Search books by title from the All Books page
+- 🗂️ **Category Filter** — Sidebar to filter books by Story, Tech, or Science
+- 📖 **Book Details** — Private route showing full book info, availability, and borrow action
+- 🔐 **Authentication** — Email/password login & registration + Google OAuth via BetterAuth
+- 👤 **My Profile** — Private route to view and update user name and avatar
+- 📱 **Fully Responsive** — Works seamlessly on mobile, tablet, and desktop
+- 🔒 **Secure Config** — All API keys and secrets stored in environment variables
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+| Technology | Usage |
+|---|---|
+| [Next.js](https://nextjs.org/) | React framework (SSR + routing) |
+| [Tailwind CSS](https://tailwindcss.com/) | Utility-first styling |
+| [DaisyUI](https://daisyui.com/) / [HeroUI](https://heroui.com/) | UI component library |
+| [BetterAuth](https://better-auth.com/) | Authentication (Email + Google) |
+| MongoDB | Database |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
