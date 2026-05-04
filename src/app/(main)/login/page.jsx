@@ -39,7 +39,7 @@ export default function Login() {
             provider: "google",
             rememberMe:false,
         })
-        toast.success("Registration Successfull")
+        toast.success("Login Success")
     }
     return (
         <div className='flex justify-center items-center min-h-screen px-4'>

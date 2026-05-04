@@ -45,9 +45,12 @@ export default function Register() {
     const googleButton = async () => {
         await authClient.signIn.social({
             provider: "google",
-            rememberMe:false,
+            rememberMe: false,
         })
-        toast.success("Login Successfull")
+        toast.success("Registration Successfull")
+        router.push('/login')
+        await authClient.signOut
+
     }
 
     return (

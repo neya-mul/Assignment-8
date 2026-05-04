@@ -10,6 +10,7 @@ import { authClient } from '@/lib/auth-client'
 // import { router } from 'better-auth/api'
 import { useRouter } from 'next/navigation'
 import { getFeatures } from '@/lib/data'
+import { toast } from 'react-toastify'
 
 export default  function Navbar() {
     const { data: session } = authClient.useSession()
@@ -23,7 +24,8 @@ export default  function Navbar() {
         await authClient.signOut({
             fetchOptions: {
                 onSuccess: () => {
-                    router.push("/login"); // redirect to login page
+                    router.push("/login"); 
+                    toast.info("Logged out successfully")
                 },
             },
         });
@@ -32,7 +34,7 @@ export default  function Navbar() {
 
 
     return (
-        <div className="navbar shadow-lg bg-[#1d1b20] fixed z-50 p-1">
+        <div className="navbar shadow-lg bg-[#1d1b20] fixed z-50 p-[4px]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
