@@ -14,6 +14,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   /*  */
   border-color: rgba(184, 142, 72, 0.4);
+  color: #FFFFFF;
 }
 
 .button:hover {

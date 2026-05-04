@@ -4,6 +4,7 @@ import { authClient } from '@/lib/auth-client'
 import Image from 'next/image'
 import React from 'react'
 import { toast } from 'react-toastify'
+import { motion } from "framer-motion"
 // import {DetailsCom} from '../components/DetailsCom'
 
 export default function DetailsCom({ detail }) {
@@ -24,9 +25,13 @@ export default function DetailsCom({ detail }) {
 
     return (
 
-        <div className="hero min-h-screen py-30  px-4 sm:px-6 lg:px-0">
+        <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="hero min-h-screen py-30  px-4 sm:px-6 lg:px-0">
             {/* <DetailsCom></DetailsCom> */}
-            <div className="hero-content  flex flex-col lg:flex-row gap-10 container mx-auto  detail p-20 rounded-2xl ">
+            <div className="hero-content  flex flex-col lg:flex-row gap-10 container mx-auto max-w-[900px] detail p-20 rounded-2xl ">
                 <Image
                     width={200}
                     height={400}
@@ -43,6 +48,6 @@ export default function DetailsCom({ detail }) {
                     <button onClick={handleBorrow} className="btn button bg-gray-500 my-3">Borrow this Book</button>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
