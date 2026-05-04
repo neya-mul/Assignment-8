@@ -2,7 +2,7 @@
 
 **BookNest** is an online book borrowing platform where you can borrow books digitally. Built with **Next.js**, **TailwindCSS**, **BetterAuth**, and **MongoDB**.
 
-🔗 **Live Site:** [https://your-live-url.vercel.app](https://your-live-url.vercel.app)
+🔗 **Live Site:** [https://neyamul-assignment-8.vercel.app/home](https://neyamul-assignment-8.vercel.app/home)
 
 ---
 
