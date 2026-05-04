@@ -8,6 +8,10 @@
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
 
+
+.text-white-s{
+  color: whitesmoke;
+}
 .button {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
   background: #1C1B1F;
