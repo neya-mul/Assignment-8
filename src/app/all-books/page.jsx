@@ -44,7 +44,7 @@ export default function AllBooks() {
         </div>
         <div className="drawer-side ">
           <label htmlFor="my-drawer-1" aria-label="close sidebar" className="drawer-overlay"></label>
-          <ul className="menu min-h-fit mt-[20%] w-80 p-4">
+          <ul className="menu min-h-fit mt-[20%] w-80 p-4 text-white">
             {/* Sidebar content here */}
             <li onClick={() => handleCategory('')}><a>All</a></li>
             <li onClick={() => handleCategory('story')}><a>Story</a></li>

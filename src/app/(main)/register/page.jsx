@@ -1,5 +1,6 @@
 'use client'
 import { authClient } from '@/lib/auth-client'
+import Link from 'next/link'
 // import { router } from 'better-auth/api'
 // import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -19,7 +20,7 @@ export default function Register() {
         const password = e.target.password.value
         const email = e.target.email.value
         // console.log(name, image, password, email);
-        
+
 
         const { data, error } = await authClient.signUp.email({
             name: name, // required
@@ -29,10 +30,10 @@ export default function Register() {
             callbackURL: "/login",
         });
         // console.log(data, error)
-        if(error){
+        if (error) {
             toast.error(error.message)
         }
-        else{
+        else {
             await authClient.signOut()
             toast.success("Registered Successfully")
             router.push('/login')
@@ -64,7 +65,7 @@ export default function Register() {
                     <input type="password" className="input w-full bg-[#1C1B1F] border-[#b88e4866]" placeholder="Password" name='password' />
 
                     <button type='submit' className="btn btn-neutral button mt-4 w-full">Register</button>
-
+                    <p className='text-sm mt-4 text-white'>Already have an account? <Link className='text-blue-500' href='/login'> Login</Link></p>
                 </fieldset>
             </form>
         </div>
