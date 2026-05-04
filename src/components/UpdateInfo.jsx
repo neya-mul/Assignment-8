@@ -7,19 +7,23 @@ export default function UpdateInfo() {
 
   const update = async (e) => {
     e.preventDefault()
-    e.target.reset()
+    // e.target.reset()
     document.getElementById('modal').checked = false;
     const name = e.target.name.value.trim()
     const image = e.target.image.value.trim()
     await authClient.updateUser({
-      image: image,
-      name:name
+     
+      name,
+      ...(image && {image})
     })
+    await authClient.getSession()
+    e.target.reset()
+    document.getElementById('modal').checked = false
   }
   return (
     <div>
       {/* The button to open modal */}
-      <label htmlFor="my_modal_7" className="btn">Edit Info</label>
+      <label htmlFor="modal" className="btn button">Edit Info</label>
 
       {/* Put this part before </body> tag */}
       <input type="checkbox" id="modal" className="modal-toggle" />
@@ -30,7 +34,7 @@ export default function UpdateInfo() {
               <h1 className='text-center text-3xl'>Update Your Info</h1>
 
               <label className="label">Name</label>
-              <input type="text" className="input w-full" placeholder="Name" name='name' />
+              <input type="text" className="input w-full" placeholder="Name" name='name' required/>
 
               <label className="label">Iamge</label>
               <input type="url" className="input w-full" placeholder="Url" name='image' />

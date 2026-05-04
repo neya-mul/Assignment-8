@@ -21,9 +21,9 @@ export default function DetailsCom({detail}) {
 
     return (
 
-        <div className="hero min-h-screen pt-30 px-10 lg:px-0">
+        <div className="hero min-h-screen py-30  px-4 sm:px-6 lg:px-0">
             {/* <DetailsCom></DetailsCom> */}
-            <div className="hero-content  flex-col lg:flex-row gap-10 container mx-auto detail w-fit p-20 rounded-2xl ">
+            <div className="hero-content flex flex-col lg:flex-row gap-10 container mx-auto detail p-20 rounded-2xl ">
                 <Image
                     width={200}
                     height={400}
