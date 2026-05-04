@@ -1,10 +1,16 @@
+'use client'
 import React from 'react'
 import banner from '../../public/images/banner.png'
 import Link from 'next/link'
+// import { motion } from "motion/react"
+import { motion } from "framer-motion"
 
 export default function Banner() {
   return (
-     <div
+     <motion.div
+     initial={{opacity:0, scale:0.5}}
+     animate={{opacity:1, scale: 1}}
+     transition={{duration:0.5}}
         className="hero min-h-screen"
         style={{
           backgroundImage:
@@ -21,6 +27,10 @@ export default function Banner() {
             <Link href='all-books'> <button className="btn button rounded-2xl">Browse Now</button></Link>
           </div>
         </div>
-      </div>
+      </motion.div>
   )
 }
+
+// initial={{opacity:0, y:50}}
+//      animate={{opacity:1, y: 0}}
+//      transition={{duration:0.7, ease:'easeOut'}}
