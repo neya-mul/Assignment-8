@@ -51,7 +51,7 @@ export default function Register() {
                     <h1 className='text-center text-3xl'>Please Register</h1>
 
                     <label className="label">Name</label>
-                    <input type="text" className="input w-full bg-[#1C1B1F] border-[#b88e4866]" placeholder="Name" name='name' />
+                    <input type="text" className="input w-full bg-[#1C1B1F] border-[#b88e4866]" placeholder="Name" name='name' required/>
 
                     <label className="label">Image URL</label>
                     <input type='url' className="input w-full bg-[#1C1B1F] border-[#b88e4866]" placeholder="Image URL" name='image' />
@@ -59,13 +59,13 @@ export default function Register() {
 
 
                     <label className="label">Email</label>
-                    <input type="email" className="input w-full bg-[#1C1B1F] border-[#b88e4866]" placeholder="Email" name='email' />
+                    <input type="email" className="input w-full bg-[#1C1B1F] border-[#b88e4866]" placeholder="Email" name='email' required/>
 
                     <label className="label">Password</label>
-                    <input type="password" className="input w-full bg-[#1C1B1F] border-[#b88e4866]" placeholder="Password" name='password' />
+                    <input type="password" className="input w-full bg-[#1C1B1F] border-[#b88e4866]" placeholder="Password" name='password' required/>
 
                     <button type='submit' className="btn btn-neutral button mt-4 w-full">Register</button>
-                    <p className='text-sm mt-4 text-white'>Already have an account? <Link className='text-blue-500' href='/login'> Login</Link></p>
+                    <p className='text-sm mt-4required text-white'>Already have an account? <Link className='text-blue-500' href='/login'> Login</Link></p>
                 </fieldset>
             </form>
         </div>

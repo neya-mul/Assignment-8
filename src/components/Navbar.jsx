@@ -32,7 +32,7 @@ export default  function Navbar() {
 
 
     return (
-        <div className="navbar shadow-lg bg-[#1d1b20] fixed z-50 ">
+        <div className="navbar shadow-lg bg-[#1d1b20] fixed z-50 p-1">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
