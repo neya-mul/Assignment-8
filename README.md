@@ -1,6 +1,6 @@
 # 📚 BookNest
 
-**BookNest** is a online book borrowing platform from where you can borrow books online. I have made this website using **BetterAuth**, **Next.js**, and **MongoDB**.
+**BookNest** is a online book borrowing platform from where you can borrow books online. I have made this website using **TailwindCSS** **BetterAuth**, **Next.js**, and **MongoDB**.
 
 ---
 
