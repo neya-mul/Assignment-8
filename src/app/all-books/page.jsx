@@ -35,16 +35,16 @@ export default function AllBooks() {
   }
 
   return (
-    <div className=' mt-30'>
-      <div className="drawer">
-        <input id="my-drawer-1" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content">
+    <div className=' mt-30 '>
+      <div className="drawer ">
+        <input id="my-drawer-1" type="checkbox" className="drawer-toggle " />
+        <div className="drawer-content ">
           {/* Page content here */}
-          <label htmlFor="my-drawer-1" className="btn drawer-button">Filter by Category</label>
+          <label htmlFor="my-drawer-1" className="btn drawer-button bg-[#1e1d1b]">Filter by Category</label>
         </div>
-        <div className="drawer-side">
+        <div className="drawer-side ">
           <label htmlFor="my-drawer-1" aria-label="close sidebar" className="drawer-overlay"></label>
-          <ul className="menu bg-base-200 min-h-fit mt-[20%] w-80 p-4">
+          <ul className="menu min-h-fit mt-[20%] w-80 p-4">
             {/* Sidebar content here */}
             <li onClick={() => handleCategory('')}><a>All</a></li>
             <li onClick={() => handleCategory('story')}><a>Story</a></li>
@@ -78,14 +78,14 @@ export default function AllBooks() {
             </label>
             {/* <div className="validator-hint hidden">Enter valid email address</div> */}
           </div>
-          <button className="btn button btn-neutral join-item">Search</button>
+          {/* <button className="btn button btn-neutral join-item">Search</button> */}
         </div>
       </div>
 
 
       {/* booke */}
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 p-5'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 p-5 z-50'>
         {
           filterBooks.map(book => <BookCard book={book} key={book.id}></BookCard>)
         }
