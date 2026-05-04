@@ -39,10 +39,10 @@ export default function Login() {
             provider: "google",
             rememberMe:false,
         })
-        toast.success("Login Successfull")
+        toast.success("Registration Successfull")
     }
     return (
-        <div className='flex justify-center items-center min-h-[80vh] px-4'>
+        <div className='flex justify-center items-center min-h-screen px-4'>
             <form action="" onSubmit={loginButton} className='max-w-xl w-full mx-auto'>
                 <fieldset className="fieldset bg-[#1C1B1F] border-[#b88e4866] shadoww rounded-box border md:p-10 p-6  ">
                     <h1 className='text-center text-3xl'>Please Login</h1>
