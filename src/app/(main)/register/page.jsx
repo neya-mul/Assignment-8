@@ -28,7 +28,7 @@ export default function Register() {
             image: image,
             callbackURL: "/login",
         });
-        console.log(data, error)
+        // console.log(data, error)
         if(error){
             toast.error(error.message)
         }
